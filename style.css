@@ -96,10 +96,22 @@ textarea{
   width: 700px;
   background-color: lightgrey;
   float: left;
-  padding: 20px;
+  padding: 10px;
   margin-top: 5px;
   margin-left: 5px;
   text-align: center;
+  color: black;
+  vertical-align: middle;
+}
+#textArea {
+  height: 60px;
+  width: 700px;
+  background-color: lightgrey;
+  float: left;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: left;
   color: black;
   vertical-align: middle;
 }
@@ -117,11 +129,13 @@ textarea{
   color: white;
   vertical-align: middle;
 }
-.box3 i:hover {
-  font-size: 25px;
-  transition: all .3s ease-in-out;
-  color: yellow
+#box3:hover {
+  background-color: #f3a22f;
+  cursor: pointer;
 }
+
+
+
 
 #agenda {
 height: 30px;
