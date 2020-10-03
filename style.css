@@ -78,6 +78,18 @@ textarea{
   background-color: rgb(223, 219, 253);
 }
 
+.box1 {
+  height: 60px;
+  width: 100px;
+  background-color: gray;
+  float: left;
+  padding: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+}
 #box1 {
   height: 60px;
   width: 100px;

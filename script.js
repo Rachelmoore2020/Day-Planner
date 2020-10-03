@@ -10,3 +10,19 @@ function postDate() {
 }
 postDate()
 
+var userInput = document.getElementById("textArea");
+function saveToLocal() {
+  console.log("userInput", userInput)
+
+  }
+  // $('#box3').on('click', saveToLocal()
+
+  // var hourBox = ['.one']
+
+  $(document).ready(function(){
+    var hourTextBox = Array();
+    $('.item').each(function(index,`obj`){
+       res.push(obj.id);
+    });
+    console.log(res);
+});
