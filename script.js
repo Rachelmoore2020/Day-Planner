@@ -176,10 +176,22 @@ function changebknd() {
   // }
   changebknd()
 
-// Put a line here that asks if localStorage is empty
-// var storedInput = localStorage.getItem(input).value
 
+// code for box 9
+document.getElementById("nine").innerHTML = JSON.parse(localStorage.getItem("input9"))
 
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input9"));
+  localStorage.getItem("input9")
+}
+getAgendaItems();
+
+function agendaItem9() {
+var input9 = document.getElementById("nine").value;
+console.log(input9);
+localStorage.setItem("input9", JSON.stringify(input9));
+}
+// code for box 10
 document.getElementById("ten").innerHTML = JSON.parse(localStorage.getItem("input"))
 
 function getAgendaItems() {
@@ -193,4 +205,118 @@ function agendaItem() {
 var input = document.getElementById("ten").value;
 console.log(input);
 localStorage.setItem("input", JSON.stringify(input));
+}
+
+// code for box 11
+document.getElementById("eleven").innerHTML = JSON.parse(localStorage.getItem("input11"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input11"));
+  localStorage.getItem("input11")
+}
+getAgendaItems();
+
+function agendaItem11() {
+var input11 = document.getElementById("eleven").value;
+console.log(input11);
+localStorage.setItem("input11", JSON.stringify(input11));
+}
+
+// code for box 12
+document.getElementById("twelve").innerHTML = JSON.parse(localStorage.getItem("input12"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input12"));
+  localStorage.getItem("input12")
+}
+getAgendaItems();
+
+function agendaItem12() {
+var input12 = document.getElementById("twelve").value;
+console.log(input12);
+localStorage.setItem("input12", JSON.stringify(input12));
+}
+// code for box 13
+document.getElementById("one").innerHTML = JSON.parse(localStorage.getItem("input3"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input3"));
+  localStorage.getItem("input3")
+}
+getAgendaItems();
+
+function agendaItem3() {
+var input3 = document.getElementById("one").value;
+console.log(input3);
+localStorage.setItem("input3", JSON.stringify(input3));
+}
+// code for box 14
+document.getElementById("two").innerHTML = JSON.parse(localStorage.getItem("input4"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input11"));
+  localStorage.getItem("input11")
+}
+getAgendaItems();
+
+function agendaItem4() {
+var input4 = document.getElementById("two").value;
+console.log(input4);
+localStorage.setItem("input4", JSON.stringify(input4));
+}
+// code for box 15
+document.getElementById("three").innerHTML = JSON.parse(localStorage.getItem("input5"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input5"));
+  localStorage.getItem("input5")
+}
+getAgendaItems();
+
+function agendaItem5() {
+var input5 = document.getElementById("three").value;
+console.log(input5);
+localStorage.setItem("input5", JSON.stringify(input5));
+}
+// code for box 16
+document.getElementById("four").innerHTML = JSON.parse(localStorage.getItem("input6"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input6"));
+  localStorage.getItem("input6")
+}
+getAgendaItems();
+
+function agendaItem6() {
+var input6 = document.getElementById("four").value;
+console.log(input6);
+localStorage.setItem("input6", JSON.stringify(input6));
+}
+// code for box 17
+document.getElementById("five").innerHTML = JSON.parse(localStorage.getItem("input7"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input7"));
+  localStorage.getItem("input7")
+}
+getAgendaItems();
+
+function agendaItem7() {
+var input7 = document.getElementById("five").value;
+console.log(input7);
+localStorage.setItem("input7", JSON.stringify(input7));
+}
+// code for box 18
+document.getElementById("six").innerHTML = JSON.parse(localStorage.getItem("input8"))
+
+function getAgendaItems() {
+  var storedTodos = JSON.parse(localStorage.getItem("input8"));
+  localStorage.getItem("input8")
+}
+getAgendaItems();
+
+function agendaItem8() {
+var input11 = document.getElementById("six").value;
+console.log(input8);
+localStorage.setItem("input8", JSON.stringify(input8));
 }
