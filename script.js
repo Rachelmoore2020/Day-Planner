@@ -1,9 +1,12 @@
 
 
 var date = moment().format("MMM Do YYYY");
-var hour = moment().format("HH");
+var hour = parseInt(moment().format("HH"));
+console.log(hour)
+
 console.log("date", date);
 console.log("hour", hour);
+
 
 function postDate() {
   var postDate= document.getElementById("agenda");
@@ -11,170 +14,117 @@ function postDate() {
 }
 postDate()
 
-// Saving user input to local storage
-// var userInput = document.getElementsByClass("textArea");
-// function saveToLocal() {
-//   console.log("userInput", userInput)
+  if (hour === 19) 
+  document.getElementById('nine').classList.add('textAreaPresent');
+  document.getElementById('ten').classList.add('textAreaFuture');
+  document.getElementById('eleven').classList.add('textAreaFuture');
+  document.getElementById('twelve').classList.add('textAreaFuture');
+  document.getElementById('one').classList.add('textAreaFuture');
+  document.getElementById('two').classList.add('textAreaFuture');
+  document.getElementById('three').classList.add('textAreaFuture');
+  document.getElementById('four').classList.add('textAreaFuture');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 10) 
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPresent');
+  document.getElementById('eleven').classList.add('textAreaFuture');
+  document.getElementById('twelve').classList.add('textAreaFuture');
+  document.getElementById('one').classList.add('textAreaFuture');
+  document.getElementById('two').classList.add('textAreaFuture');
+  document.getElementById('three').classList.add('textAreaFuture');
+  document.getElementById('four').classList.add('textAreaFuture');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 11) 
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPresent');
+  document.getElementById('twelve').classList.add('textAreaFuture');
+  document.getElementById('one').classList.add('textAreaFuture');
+  document.getElementById('two').classList.add('textAreaFuture');
+  document.getElementById('three').classList.add('textAreaFuture');
+  document.getElementById('four').classList.add('textAreaFuture');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 12)
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPast');
+  document.getElementById('twelve').classList.add('textAreaPresent');
+  document.getElementById('one').classList.add('textAreaFuture');
+  document.getElementById('two').classList.add('textAreaFuture');
+  document.getElementById('three').classList.add('textAreaFuture');
+  document.getElementById('four').classList.add('textAreaFuture');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 13)
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPast');
+  document.getElementById('twelve').classList.add('textAreaPast');
+  document.getElementById('one').classList.add('textAreaPresent');
+  document.getElementById('two').classList.add('textAreaFuture');
+  document.getElementById('three').classList.add('textAreaFuture');
+  document.getElementById('four').classList.add('textAreaFuture');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+  else if (hour === 14)
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPast');
+  document.getElementById('twelve').classList.add('textAreaPast');
+  document.getElementById('one').classList.add('textAreaPast');
+  document.getElementById('two').classList.add('textAreaPresent');
+  document.getElementById('three').classList.add('textAreaFuture');
+  document.getElementById('four').classList.add('textAreaFuture');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 15) 
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPast');
+  document.getElementById('twelve').classList.add('textAreaPast');
+  document.getElementById('one').classList.add('textAreaPast');
+  document.getElementById('two').classList.add('textAreaPast');
+  document.getElementById('three').classList.add('textAreaPresent');
+  document.getElementById('four').classList.add('textAreaFuture');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 16) 
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPast');
+  document.getElementById('twelve').classList.add('textAreaPast');
+  document.getElementById('one').classList.add('textAreaPast');
+  document.getElementById('two').classList.add('textAreaPast');
+  document.getElementById('three').classList.add('textAreaPast');
+  document.getElementById('four').classList.add('textAreaPresent');
+  document.getElementById('five').classList.add('textAreaFuture');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 17) 
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPast');
+  document.getElementById('twelve').classList.add('textAreaPast');
+  document.getElementById('one').classList.add('textAreaPast');
+  document.getElementById('two').classList.add('textAreaPast');
+  document.getElementById('three').classList.add('textAreaPast');
+  document.getElementById('four').classList.add('textAreaPast');
+  document.getElementById('five').classList.add('textAreaPresent');
+  document.getElementById('six').classList.add('textAreaFuture');
+else if (hour === 18)
+  document.getElementById('nine').classList.add('textAreaPast');
+  document.getElementById('ten').classList.add('textAreaPast');
+  document.getElementById('eleven').classList.add('textAreaPast');
+  document.getElementById('twelve').classList.add('textAreaPast');
+  document.getElementById('one').classList.add('textAreaPast');
+  document.getElementById('two').classList.add('textAreaPast');
+  document.getElementById('three').classList.add('textAreaPast');
+  document.getElementById('four').classList.add('textAreaPast');
+  document.getElementById('five').classList.add('textAreaPast');
+  document.getElementById('six').classList.add('textAreaPresent');
 
-//   }
-  // $('#box3').on('click', saveToLocal()
-
-
-  // var midBox = document.getElementsByClassName('textArea');
-  // console.log(midBox)
- 
-  // why does this only return the last one?
-  // var midBoxEl = midBox[[1], [2], [3]];
-  // console.log("midBoxel", midBoxEl);
-
-  // midBox.forEach()
-
-
-// change background colors depending on time of day
-// function changebknd() {
-//   if (hour === 09) {
-//   document.getElementById('nine').classList.add('textAreaPresent');
-//   document.getElementById('ten').classList.add('textAreaFuture');
-//   document.getElementById('eleven').classList.add('textAreaFuture');
-//   document.getElementById('twelve').classList.add('textAreaFuture');
-//   document.getElementById('one').classList.add('textAreaFuture');
-//   document.getElementById('two').classList.add('textAreaFuture');
-//   document.getElementById('three').classList.add('textAreaFuture');
-//   document.getElementById('four').classList.add('textAreaFuture');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 10) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPresent');
-//   document.getElementById('eleven').classList.add('textAreaFuture');
-//   document.getElementById('twelve').classList.add('textAreaFuture');
-//   document.getElementById('one').classList.add('textAreaFuture');
-//   document.getElementById('two').classList.add('textAreaFuture');
-//   document.getElementById('three').classList.add('textAreaFuture');
-//   document.getElementById('four').classList.add('textAreaFuture');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 11) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPresent');
-//   document.getElementById('twelve').classList.add('textAreaFuture');
-//   document.getElementById('one').classList.add('textAreaFuture');
-//   document.getElementById('two').classList.add('textAreaFuture');
-//   document.getElementById('three').classList.add('textAreaFuture');
-//   document.getElementById('four').classList.add('textAreaFuture');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 12) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPast');
-//   document.getElementById('twelve').classList.add('textAreaPresent');
-//   document.getElementById('one').classList.add('textAreaFuture');
-//   document.getElementById('two').classList.add('textAreaFuture');
-//   document.getElementById('three').classList.add('textAreaFuture');
-//   document.getElementById('four').classList.add('textAreaFuture');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 13) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPast');
-//   document.getElementById('twelve').classList.add('textAreaPast');
-//   document.getElementById('one').classList.add('textAreaPresent');
-//   document.getElementById('two').classList.add('textAreaFuture');
-//   document.getElementById('three').classList.add('textAreaFuture');
-//   document.getElementById('four').classList.add('textAreaFuture');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-//   } else if (hour === 14) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPast');
-//   document.getElementById('twelve').classList.add('textAreaPast');
-//   document.getElementById('one').classList.add('textAreaPast');
-//   document.getElementById('two').classList.add('textAreaPresent');
-//   document.getElementById('three').classList.add('textAreaFuture');
-//   document.getElementById('four').classList.add('textAreaFuture');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 15) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPast');
-//   document.getElementById('twelve').classList.add('textAreaPast');
-//   document.getElementById('one').classList.add('textAreaPast');
-//   document.getElementById('two').classList.add('textAreaPast');
-//   document.getElementById('three').classList.add('textAreaPresent');
-//   document.getElementById('four').classList.add('textAreaFuture');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 16) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPast');
-//   document.getElementById('twelve').classList.add('textAreaPast');
-//   document.getElementById('one').classList.add('textAreaPast');
-//   document.getElementById('two').classList.add('textAreaPast');
-//   document.getElementById('three').classList.add('textAreaPast');
-//   document.getElementById('four').classList.add('textAreaPresent');
-//   document.getElementById('five').classList.add('textAreaFuture');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 17) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPast');
-//   document.getElementById('twelve').classList.add('textAreaPast');
-//   document.getElementById('one').classList.add('textAreaPast');
-//   document.getElementById('two').classList.add('textAreaPast');
-//   document.getElementById('three').classList.add('textAreaPast');
-//   document.getElementById('four').classList.add('textAreaPast');
-//   document.getElementById('five').classList.add('textAreaPresent');
-//   document.getElementById('six').classList.add('textAreaFuture');
-// } else if (hour === 18) {
-//   document.getElementById('nine').classList.add('textAreaPast');
-//   document.getElementById('ten').classList.add('textAreaPast');
-//   document.getElementById('eleven').classList.add('textAreaPast');
-//   document.getElementById('twelve').classList.add('textAreaPast');
-//   document.getElementById('one').classList.add('textAreaPast');
-//   document.getElementById('two').classList.add('textAreaPast');
-//   document.getElementById('three').classList.add('textAreaPast');
-//   document.getElementById('four').classList.add('textAreaPast');
-//   document.getElementById('five').classList.add('textAreaPast');
-//   document.getElementById('six').classList.add('textAreaPresent');
-// }
-// }
-// console.log(hour)
-// changebknd();
-
-
-function changebknd() {
-    if (hour === 12) 
-    document.getElementById('nine').classList.add('textAreaPast');
-    document.getElementById('ten').classList.add('textAreaPast');
-    document.getElementById('eleven').classList.add('textAreaPast');
-    document.getElementById('twelve').classList.add('textAreaPresent');
-    document.getElementById('one').classList.add('textAreaFuture');
-    document.getElementById('two').classList.add('textAreaFuture');
-    document.getElementById('three').classList.add('textAreaFuture');
-    document.getElementById('four').classList.add('textAreaFuture');
-    document.getElementById('five').classList.add('textAreaFuture');
-    document.getElementById('six').classList.add('textAreaFuture');
-  } 
-  
-  // else if (hour === 13) {
-  //   document.getElementById('nine').classList.add('textAreaPast');
-  //   document.getElementById('ten').classList.add('textAreaPresent');
-  //   document.getElementById('eleven').classList.add('textAreaFuture');
-  //   document.getElementById('twelve').classList.add('textAreaFuture');
-  //   document.getElementById('one').classList.add('textAreaFuture');
-  //   document.getElementById('two').classList.add('textAreaFuture');
-  //   document.getElementById('three').classList.add('textAreaFuture');
-  //   document.getElementById('four').classList.add('textAreaFuture');
-  //   document.getElementById('five').classList.add('textAreaFuture');
-  //   document.getElementById('six').classList.add('textAreaFuture');
-  // }
-  changebknd()
 
 
 // code for box 9
@@ -307,7 +257,7 @@ console.log(input7);
 localStorage.setItem("input7", JSON.stringify(input7));
 }
 // code for box 18
-document.getElementById("six").innerHTML = JSON.parse(localStorage.getItem("input8"))
+document.getElementById("six").innerHTML = JSON.parse(localStorage.getItem("input8"));
 
 function getAgendaItems() {
   var storedTodos = JSON.parse(localStorage.getItem("input8"));
