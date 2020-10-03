@@ -176,22 +176,19 @@ function changebknd() {
   // }
   changebknd()
 
+// Put a line here that asks if localStorage is empty
+// var storedInput = localStorage.getItem(input).value
 
-  // function action() {
-  //   window.localStorage['text10'] = document.getElementById("text10").value;
-  // }
+// if (storedInput) {
+//   document.getElementById("#ten").innerHTML = input
+// }
 
-  // function action() {
-  //   // Stringify and set "todos" key in localStorage to todos array
-  //   localStorage.setItem("text10", JSON.stringify(input));
-  // }
 
-  function getAgendaItems() {
-    // Get stored items from localStorage
-    // Parsing the JSON string to an object
-    var storedTodos = JSON.parse(localStorage.getItem("input"));
-    localStorage.getItem("input")
-  }
+function getAgendaItems() {
+  // Get stored items from localStorage
+  var storedTodos = JSON.parse(localStorage.getItem("input"));
+  localStorage.getItem("input")
+}
 getAgendaItems();
 
 function agendaItem() {
@@ -199,4 +196,3 @@ var input = document.getElementById("ten").value;
 console.log(input);
 localStorage.setItem("input", JSON.stringify(input));
 }
-
