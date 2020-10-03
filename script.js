@@ -1,12 +1,13 @@
 
 
 var date = moment().format("MMM Do YYYY");
+var hour = moment().format("HH");
 console.log("date", date);
+console.log("hour", hour);
 
 function postDate() {
-  var postDate= document.getElementById("box2");
+  var postDate= document.getElementById("agenda");
   postDate.textContent = date;
-  
 }
 postDate()
 
@@ -17,6 +18,12 @@ postDate()
 //   }
   // $('#box3').on('click', saveToLocal()
 
-  var hourBox = ['.one', '.two'];
-  console.log("hourBox", hourBox);
+  // var hourBox1 = getElementById("nine");
+  // var hourbox2 = getElementById("ten");
 
+  console.log("hourBox1", hourBox1);
+
+function changebknd() {
+  if (hour === 06)document.getElementById("ten").style.color = "green";
+}
+changebknd()

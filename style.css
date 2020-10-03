@@ -45,20 +45,7 @@ textarea{
   width: 100px;
 }
 
-.past {
-  background-color: #858282;
-  color: white;
-}
 
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
 
 .saveBtn {
   border-left: 1px solid black;
@@ -90,12 +77,13 @@ textarea{
   color: black;
   vertical-align: middle;
 }
-#box1 {
+
+#box2 {
   height: 60px;
-  width: 100px;
-  background-color: gray;
+  width: 700px;
+  background-color: lightgrey;
   float: left;
-  padding: 20px;
+  padding: 10px;
   margin-top: 5px;
   margin-left: 5px;
   text-align: center;
@@ -103,7 +91,7 @@ textarea{
   vertical-align: middle;
 }
 
-#box2 {
+.box2 {
   height: 60px;
   width: 700px;
   background-color: lightgrey;
@@ -130,23 +118,7 @@ textarea{
   vertical-align: middle;
 }
 
-#box3 {
-  height: 60px;
-  width: 100px;
-  background-color: blue;
-  float: right;
-  padding: 20px;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-}
-#box3:hover {
-  background-color: #f3a22f;
-  cursor: pointer;
-}
+
 .box3 {
   height: 60px;
   width: 100px;
@@ -163,16 +135,31 @@ textarea{
 .box3:hover {
   background-color: #f3a22f;
   cursor: pointer;
+
+}
+#noHover:hover {
+  background-color: blue;
+  cursor: default;
+}
+.past {
+  background-color: #858282;
+  color: white;
 }
 
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
 
 
 
 #agenda {
-height: 30px;
-width: 400px;
-background-color: beige
-}
-.textArea {
+text-align: center;
+font-size: 30px;
 
 }
