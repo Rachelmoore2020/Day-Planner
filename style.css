@@ -115,7 +115,21 @@ textarea{
   color: black;
   vertical-align: middle;
 }
-#textArea {
+
+#agenda {
+  height: 60px;
+  width: 700px;
+  background-color: lightgrey;
+  float: left;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+}
+
+.textArea {
   height: 60px;
   width: 700px;
   background-color: lightgrey;
@@ -127,6 +141,7 @@ textarea{
   color: black;
   vertical-align: middle;
 }
+
 
 #box3 {
   height: 60px;
