@@ -179,10 +179,8 @@ function changebknd() {
 // Put a line here that asks if localStorage is empty
 // var storedInput = localStorage.getItem(input).value
 
-// if (storedInput) {
-//   document.getElementById("#ten").innerHTML = input
-// }
 
+document.getElementById("ten").innerHTML = JSON.parse(localStorage.getItem("input"))
 
 function getAgendaItems() {
   // Get stored items from localStorage
