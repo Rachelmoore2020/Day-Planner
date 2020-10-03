@@ -31,22 +31,19 @@ postDate()
 
 
 // change background colors depending on time of day
-function change9() {
-  if (hour === 09);
-  document.getElementById('nine').classList.add('textAreaPresent');
-  document.getElementById('ten').classList.add('textAreaFuture');
-  document.getElementById('eleven').classList.add('textAreaFuture');
-  document.getElementById('twelve').classList.add('textAreaFuture');
-  document.getElementById('one').classList.add('textAreaFuture');
-  document.getElementById('two').classList.add('textAreaFuture');
-  document.getElementById('three').classList.add('textAreaFuture');
-  document.getElementById('four').classList.add('textAreaFuture');
-  document.getElementById('five').classList.add('textAreaFuture');
-  document.getElementById('six').classList.add('textAreaFuture');
-}
-change9();
-// function change10() {
-//   if (hour === 10) 
+// function changebknd() {
+//   if (hour === 09) {
+//   document.getElementById('nine').classList.add('textAreaPresent');
+//   document.getElementById('ten').classList.add('textAreaFuture');
+//   document.getElementById('eleven').classList.add('textAreaFuture');
+//   document.getElementById('twelve').classList.add('textAreaFuture');
+//   document.getElementById('one').classList.add('textAreaFuture');
+//   document.getElementById('two').classList.add('textAreaFuture');
+//   document.getElementById('three').classList.add('textAreaFuture');
+//   document.getElementById('four').classList.add('textAreaFuture');
+//   document.getElementById('five').classList.add('textAreaFuture');
+//   document.getElementById('six').classList.add('textAreaFuture');
+// } else if (hour === 10) {
 //   document.getElementById('nine').classList.add('textAreaPast');
 //   document.getElementById('ten').classList.add('textAreaPresent');
 //   document.getElementById('eleven').classList.add('textAreaFuture');
@@ -57,10 +54,7 @@ change9();
 //   document.getElementById('four').classList.add('textAreaFuture');
 //   document.getElementById('five').classList.add('textAreaFuture');
 //   document.getElementById('six').classList.add('textAreaFuture');
-// }
-// change10();
-// function change11() {
-//   if (hour === 11) 
+// } else if (hour === 11) {
 //   document.getElementById('nine').classList.add('textAreaPast');
 //   document.getElementById('ten').classList.add('textAreaPast');
 //   document.getElementById('eleven').classList.add('textAreaPresent');
@@ -71,105 +65,138 @@ change9();
 //   document.getElementById('four').classList.add('textAreaFuture');
 //   document.getElementById('five').classList.add('textAreaFuture');
 //   document.getElementById('six').classList.add('textAreaFuture');
+// } else if (hour === 12) {
+//   document.getElementById('nine').classList.add('textAreaPast');
+//   document.getElementById('ten').classList.add('textAreaPast');
+//   document.getElementById('eleven').classList.add('textAreaPast');
+//   document.getElementById('twelve').classList.add('textAreaPresent');
+//   document.getElementById('one').classList.add('textAreaFuture');
+//   document.getElementById('two').classList.add('textAreaFuture');
+//   document.getElementById('three').classList.add('textAreaFuture');
+//   document.getElementById('four').classList.add('textAreaFuture');
+//   document.getElementById('five').classList.add('textAreaFuture');
+//   document.getElementById('six').classList.add('textAreaFuture');
+// } else if (hour === 13) {
+//   document.getElementById('nine').classList.add('textAreaPast');
+//   document.getElementById('ten').classList.add('textAreaPast');
+//   document.getElementById('eleven').classList.add('textAreaPast');
+//   document.getElementById('twelve').classList.add('textAreaPast');
+//   document.getElementById('one').classList.add('textAreaPresent');
+//   document.getElementById('two').classList.add('textAreaFuture');
+//   document.getElementById('three').classList.add('textAreaFuture');
+//   document.getElementById('four').classList.add('textAreaFuture');
+//   document.getElementById('five').classList.add('textAreaFuture');
+//   document.getElementById('six').classList.add('textAreaFuture');
+//   } else if (hour === 14) {
+//   document.getElementById('nine').classList.add('textAreaPast');
+//   document.getElementById('ten').classList.add('textAreaPast');
+//   document.getElementById('eleven').classList.add('textAreaPast');
+//   document.getElementById('twelve').classList.add('textAreaPast');
+//   document.getElementById('one').classList.add('textAreaPast');
+//   document.getElementById('two').classList.add('textAreaPresent');
+//   document.getElementById('three').classList.add('textAreaFuture');
+//   document.getElementById('four').classList.add('textAreaFuture');
+//   document.getElementById('five').classList.add('textAreaFuture');
+//   document.getElementById('six').classList.add('textAreaFuture');
+// } else if (hour === 15) {
+//   document.getElementById('nine').classList.add('textAreaPast');
+//   document.getElementById('ten').classList.add('textAreaPast');
+//   document.getElementById('eleven').classList.add('textAreaPast');
+//   document.getElementById('twelve').classList.add('textAreaPast');
+//   document.getElementById('one').classList.add('textAreaPast');
+//   document.getElementById('two').classList.add('textAreaPast');
+//   document.getElementById('three').classList.add('textAreaPresent');
+//   document.getElementById('four').classList.add('textAreaFuture');
+//   document.getElementById('five').classList.add('textAreaFuture');
+//   document.getElementById('six').classList.add('textAreaFuture');
+// } else if (hour === 16) {
+//   document.getElementById('nine').classList.add('textAreaPast');
+//   document.getElementById('ten').classList.add('textAreaPast');
+//   document.getElementById('eleven').classList.add('textAreaPast');
+//   document.getElementById('twelve').classList.add('textAreaPast');
+//   document.getElementById('one').classList.add('textAreaPast');
+//   document.getElementById('two').classList.add('textAreaPast');
+//   document.getElementById('three').classList.add('textAreaPast');
+//   document.getElementById('four').classList.add('textAreaPresent');
+//   document.getElementById('five').classList.add('textAreaFuture');
+//   document.getElementById('six').classList.add('textAreaFuture');
+// } else if (hour === 17) {
+//   document.getElementById('nine').classList.add('textAreaPast');
+//   document.getElementById('ten').classList.add('textAreaPast');
+//   document.getElementById('eleven').classList.add('textAreaPast');
+//   document.getElementById('twelve').classList.add('textAreaPast');
+//   document.getElementById('one').classList.add('textAreaPast');
+//   document.getElementById('two').classList.add('textAreaPast');
+//   document.getElementById('three').classList.add('textAreaPast');
+//   document.getElementById('four').classList.add('textAreaPast');
+//   document.getElementById('five').classList.add('textAreaPresent');
+//   document.getElementById('six').classList.add('textAreaFuture');
+// } else if (hour === 18) {
+//   document.getElementById('nine').classList.add('textAreaPast');
+//   document.getElementById('ten').classList.add('textAreaPast');
+//   document.getElementById('eleven').classList.add('textAreaPast');
+//   document.getElementById('twelve').classList.add('textAreaPast');
+//   document.getElementById('one').classList.add('textAreaPast');
+//   document.getElementById('two').classList.add('textAreaPast');
+//   document.getElementById('three').classList.add('textAreaPast');
+//   document.getElementById('four').classList.add('textAreaPast');
+//   document.getElementById('five').classList.add('textAreaPast');
+//   document.getElementById('six').classList.add('textAreaPresent');
 // }
-change11();
-function change12() {
-  if (hour === 12) 
-  document.getElementById('nine').classList.add('textAreaPast');
-  document.getElementById('ten').classList.add('textAreaPast');
-  document.getElementById('eleven').classList.add('textAreaPast');
-  document.getElementById('twelve').classList.add('textAreaPresent');
-  document.getElementById('one').classList.add('textAreaFuture');
-  document.getElementById('two').classList.add('textAreaFuture');
-  document.getElementById('three').classList.add('textAreaFuture');
-  document.getElementById('four').classList.add('textAreaFuture');
-  document.getElementById('five').classList.add('textAreaFuture');
-  document.getElementById('six').classList.add('textAreaFuture');
-}
-change12();
-function change1() {
-  if (hour === 13) 
-  document.getElementById('nine').classList.add('textAreaPast');
-  document.getElementById('ten').classList.add('textAreaPast');
-  document.getElementById('eleven').classList.add('textAreaPast');
-  document.getElementById('twelve').classList.add('textAreaPast');
-  document.getElementById('one').classList.add('textAreaPresent');
-  document.getElementById('two').classList.add('textAreaFuture');
-  document.getElementById('three').classList.add('textAreaFuture');
-  document.getElementById('four').classList.add('textAreaFuture');
-  document.getElementById('five').classList.add('textAreaFuture');
-  document.getElementById('six').classList.add('textAreaFuture');
-}
-change1();
-function change2() {
-  if (hour === 14) 
-  document.getElementById('nine').classList.add('textAreaPast');
-  document.getElementById('ten').classList.add('textAreaPast');
-  document.getElementById('eleven').classList.add('textAreaPast');
-  document.getElementById('twelve').classList.add('textAreaPast');
-  document.getElementById('one').classList.add('textAreaPast');
-  document.getElementById('two').classList.add('textAreaPresent');
-  document.getElementById('three').classList.add('textAreaFuture');
-  document.getElementById('four').classList.add('textAreaFuture');
-  document.getElementById('five').classList.add('textAreaFuture');
-  document.getElementById('six').classList.add('textAreaFuture');
-}
-change2();
-function change3() {
-  if (hour === 15) 
-  document.getElementById('nine').classList.add('textAreaPast');
-  document.getElementById('ten').classList.add('textAreaPast');
-  document.getElementById('eleven').classList.add('textAreaPast');
-  document.getElementById('twelve').classList.add('textAreaPast');
-  document.getElementById('one').classList.add('textAreaPast');
-  document.getElementById('two').classList.add('textAreaPast');
-  document.getElementById('three').classList.add('textAreaPresent');
-  document.getElementById('four').classList.add('textAreaFuture');
-  document.getElementById('five').classList.add('textAreaFuture');
-  document.getElementById('six').classList.add('textAreaFuture');
-}
-change3();
-function change4() {
-  if (hour === 16) 
-  document.getElementById('nine').classList.add('textAreaPast');
-  document.getElementById('ten').classList.add('textAreaPast');
-  document.getElementById('eleven').classList.add('textAreaPast');
-  document.getElementById('twelve').classList.add('textAreaPast');
-  document.getElementById('one').classList.add('textAreaPast');
-  document.getElementById('two').classList.add('textAreaPast');
-  document.getElementById('three').classList.add('textAreaPast');
-  document.getElementById('four').classList.add('textAreaPresent');
-  document.getElementById('five').classList.add('textAreaFuture');
-  document.getElementById('six').classList.add('textAreaFuture');
-}
-change4();
-function change5() {
-  if (hour === 17) 
-  document.getElementById('nine').classList.add('textAreaPast');
-  document.getElementById('ten').classList.add('textAreaPast');
-  document.getElementById('eleven').classList.add('textAreaPast');
-  document.getElementById('twelve').classList.add('textAreaPast');
-  document.getElementById('one').classList.add('textAreaPast');
-  document.getElementById('two').classList.add('textAreaPast');
-  document.getElementById('three').classList.add('textAreaPast');
-  document.getElementById('four').classList.add('textAreaPast');
-  document.getElementById('five').classList.add('textAreaPresent');
-  document.getElementById('six').classList.add('textAreaFuture');
-}
-change5();
-function change6() {
-  if (hour === 18) 
-  document.getElementById('nine').classList.add('textAreaPast');
-  document.getElementById('ten').classList.add('textAreaPast');
-  document.getElementById('eleven').classList.add('textAreaPast');
-  document.getElementById('twelve').classList.add('textAreaPast');
-  document.getElementById('one').classList.add('textAreaPast');
-  document.getElementById('two').classList.add('textAreaPast');
-  document.getElementById('three').classList.add('textAreaPast');
-  document.getElementById('four').classList.add('textAreaPast');
-  document.getElementById('five').classList.add('textAreaPast');
-  document.getElementById('six').classList.add('textAreaPresent');
-}
-change6();
+// }
+// console.log(hour)
+// changebknd();
 
+
+function changebknd() {
+    if (hour === 12) 
+    document.getElementById('nine').classList.add('textAreaPast');
+    document.getElementById('ten').classList.add('textAreaPast');
+    document.getElementById('eleven').classList.add('textAreaPast');
+    document.getElementById('twelve').classList.add('textAreaPresent');
+    document.getElementById('one').classList.add('textAreaFuture');
+    document.getElementById('two').classList.add('textAreaFuture');
+    document.getElementById('three').classList.add('textAreaFuture');
+    document.getElementById('four').classList.add('textAreaFuture');
+    document.getElementById('five').classList.add('textAreaFuture');
+    document.getElementById('six').classList.add('textAreaFuture');
+  } 
+  
+  // else if (hour === 13) {
+  //   document.getElementById('nine').classList.add('textAreaPast');
+  //   document.getElementById('ten').classList.add('textAreaPresent');
+  //   document.getElementById('eleven').classList.add('textAreaFuture');
+  //   document.getElementById('twelve').classList.add('textAreaFuture');
+  //   document.getElementById('one').classList.add('textAreaFuture');
+  //   document.getElementById('two').classList.add('textAreaFuture');
+  //   document.getElementById('three').classList.add('textAreaFuture');
+  //   document.getElementById('four').classList.add('textAreaFuture');
+  //   document.getElementById('five').classList.add('textAreaFuture');
+  //   document.getElementById('six').classList.add('textAreaFuture');
+  // }
+  changebknd()
+
+
+  // function action() {
+  //   window.localStorage['text10'] = document.getElementById("text10").value;
+  // }
+
+  // function action() {
+  //   // Stringify and set "todos" key in localStorage to todos array
+  //   localStorage.setItem("text10", JSON.stringify(input));
+  // }
+
+  function getAgendaItems() {
+    // Get stored items from localStorage
+    // Parsing the JSON string to an object
+    var storedTodos = JSON.parse(localStorage.getItem("input"));
+    localStorage.getItem("input")
+  }
+getAgendaItems();
+
+function agendaItem() {
+var input = document.getElementById("ten").value;
+console.log(input);
+localStorage.setItem("input", JSON.stringify(input));
+}
 
