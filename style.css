@@ -49,6 +49,60 @@ body {
   vertical-align: middle;
   border: none;
 }
+.agendatextArea {
+  height: 60px;
+  width: 700px;
+  background-color: lightgrey;
+  float: left;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: left;
+  color: black;
+  vertical-align: middle;
+  border: none;
+}
+
+.textAreaPresent {
+  height: 60px;
+  width: 700px;
+  background-color: #ff6961;
+  float: left;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: left;
+  color: black;
+  vertical-align: middle;
+  border: none;
+}
+
+.textAreaFuture {
+  height: 60px;
+  width: 700px;
+  background-color: #77dd77;
+  float: left;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: left;
+  color: black;
+  vertical-align: middle;
+  border: none;
+}
+.textAreaPast {
+  height: 60px;
+  width: 700px;
+  background-color: #858282;
+  float: left;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: left;
+  color: black;
+  vertical-align: middle;
+  border: none;
+}
 
 .box3 {
   height: 60px;
