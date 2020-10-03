@@ -10,19 +10,13 @@ function postDate() {
 }
 postDate()
 
-var userInput = document.getElementsByClass("textArea");
-function saveToLocal() {
-  console.log("userInput", userInput)
+// var userInput = document.getElementsByClass("textArea");
+// function saveToLocal() {
+//   console.log("userInput", userInput)
 
-  }
+//   }
   // $('#box3').on('click', saveToLocal()
 
-  // var hourBox = ['.one']
+  var hourBox = ['.one', '.two'];
+  console.log("hourBox", hourBox);
 
-//   $(document).ready(function(){
-//     var hourTextBox = Array();
-//     $('.item').each(function(index,`obj`){
-//        res.push(obj.id);
-//     });
-//     console.log(res);
-// });
